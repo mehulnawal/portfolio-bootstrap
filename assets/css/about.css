@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bs-primary: #111111;
+  --bs-primary-rgb: 17, 17, 17;
+  --bs-secondary: #ffb912;
+  --bs-secondary-rgb: 255, 185, 18;
+}
+
+body {
+  background-color: var(--bs-primary);
+  color: white;
+  font-family: "Poppins", serif;
+}
+
+/* setting srt  */
+.settings {
+  font-size: 23px;
+  color: #222222;
+  background-color: white;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 15px;
+  position: fixed;
+  left: 0;
+  top: 22%;
+
+  a {
+    animation: rotate 1s linear infinite;
+  }
+}
+
+.settings-settings {
+  background-color: rgb(43, 42, 42);
+  color: white;
+  z-index: 99;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* setting end */
+
+.personal-right-div {
+  border: 2px solid #222222 !important;
+}
+
+.title {
+  margin: 70px 0px;
+  position: relative;
+
+  span:first-child,
+  span:last-child {
+    font-size: 60px;
+    font-weight: bold;
+  }
+}
+
+.title-toggle {
+  background-color: black;
+}
+
+.title::before {
+  content: "RESUME";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 120px;
+  color: #222222;
+  font-weight: bolder;
+  z-index: -1;
+}
+
+.info-header {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.info-header-toggle {
+  color: black;
+}
+
+.download-btn {
+  width: 250px;
+  position: relative;
+
+  button {
+    color: white;
+  }
+}
+
+.download-btn-toggle {
+  color: black !important;
+}
+
+.download-btn::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--bs-secondary);
+  height: 100%;
+  width: 23%;
+  border-radius: 50rem;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-btn:hover::after {
+  width: 100%;
+}
+
+.download-btn i:hover {
+  opacity: 0.6;
+}
+
+.number {
+  font-size: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+.number::after {
+  content: "+";
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.content {
+  text-transform: uppercase;
+  width: 50%;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 30%;
+  font-size: 30px;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 1px;
+  width: 20%;
+}
+
+/* skills srt */
+
+.skills-header-main {
+  position: relative;
+}
+
+.skills-header {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 8px solid #252525;
+  border-right: 8px solid var(--bs-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-40deg);
+}
+
+.skills-percentage {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.skills-title,
+.experience {
+  position: relative;
+  margin: 80px 0px;
+}
+
+.skills-title::before,
+.experience::before {
+  content: "";
+  position: absolute;
+  left: 35%;
+  top: -30px;
+  height: 2px;
+  width: 30%;
+  background-color: #222222;
+}
+
+.experience-icon {
+  position: relative;
+}
+
+.experience-icon::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background-color: #222222;
+  top: 100%;
+  right: 50%;
+}
+
+/* skills end */
+
+/*  */
+.navbar {
+  font-size: 23px;
+  background-color: transparent;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 15px;
+  position: fixed;
+  right: 0;
+  top: 10%;
+}
+
+.icon-bg,
+.settings-icon {
+  background-color: rgb(43, 42, 42);
+  border-radius: 50%;
+  padding: 5px 12px;
+  margin-top: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-bg span,
+.active span {
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-bg:hover,
+.settings-icon:hover {
+  /* border-radius: 10px; */
+  background-color: #ffb912;
+}
+
+
+.active {
+  background-color: #ffb912;
+  border-radius: 50%;
+  padding: 5px 12px;
+  margin-top: 10px;
+  margin-top: 25px;
+}
+
+.sun-toggle {
+  background-color: white;
+  color: black;
+}

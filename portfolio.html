@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- portfolio css -->
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+</head>
+
+<body class="">
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- setting srt -->
+    <div class="settings">
+        <i class="bi bi-gear"></i>
+    </div>
+    <!-- setting end -->
+
+    <!-- main srt -->
+    <main>
+
+        <!-- title -->
+        <div class="title text-uppercase text-white text-center mt-5">
+            <span>My Portfolio</span>
+            <span class="text-secondary"></span>
+        </div>
+
+        <!-- protfolio srt -->
+        <div class="protfolio vh-100 mt-4">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="portfolio-bg">
+                            <div class="portfolio-bg-hover d-flex justify-content-center align-items-center">Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="portfolio-bg">
+                            <div class="portfolio-bg-hover d-flex justify-content-center align-items-center">Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="portfolio-bg">
+                            <div class="portfolio-bg-hover d-flex justify-content-center align-items-center">Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="portfolio-bg">
+                            <div class="portfolio-bg-hover d-flex justify-content-center align-items-center">Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="portfolio-bg">
+                            <div class="portfolio-bg-hover d-flex justify-content-center align-items-center">Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="portfolio-bg">
+                            <div class="portfolio-bg-hover d-flex justify-content-center align-items-center">Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="portfolio-bg">
+                            <div class="portfolio-bg-hover d-flex justify-content-center align-items-center">Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="portfolio-bg">
+                            <div class="portfolio-bg-hover d-flex justify-content-center align-items-center">Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="portfolio-bg">
+                            <div class="portfolio-bg-hover d-flex justify-content-center align-items-center">Project
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- protfolio srt -->
+    </main>
+    <!-- main end -->
+
+    <!-- nav srt -->
+
+    <div class="navbar d-flex flex-column" id="navbarTogglerDemo01">
+
+        <a href="" class="settings-icon text-white">
+            <i class="bi bi-brightness-high text-white fs-4 d-block mt-auto brightness" role="button"></i>
+        </a>
+
+        <div class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 flex-column">
+
+            <a class="nav-link icon-bg d-flex align-items-center gap-2 text-white" href="./index.html">
+                <!-- <span class="fs-6">Home</span> -->
+                <i class="bi bi-house-door-fill text-white"></i>
+            </a>
+
+            <a class="nav-link icon-bg d-flex align-items-center gap-2 text-white" href="./about.html">
+                <!-- <span class="fs-6">About</span> -->
+                <i class="bi bi-person text-white"></i>
+            </a>
+
+            <a class="nav-link active icon-bg icon-bg d-flex align-items-center gap-2 text-white" href="./portfolio.html">
+                <!-- <span class="fs-6">Portfolio</span> -->
+                <i class="bi bi-briefcase text-white"></i>
+            </a>
+
+            <a class="nav-link icon-bg icon-bg d-flex align-items-center gap-2 text-white" href="./contact.html">
+                <!-- <span class="fs-6">Contact</span> -->
+                <i class="bi bi-envelope text-white"></i>
+            </a>
+
+            <a class="nav-link icon-bg d-flex align-items-center gap-2 text-white" href="./blog.html">
+                <!-- <span class="fs-6">Blogs</span> -->
+                <i class="bi bi-chat-quote text-white"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- nav end -->
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery cdn  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- custom cursor -->
+    <script>
+        var cursor = document.querySelector('.cursor');
+        var cursorinner = document.querySelector('.cursor2');
+        var a = document.querySelectorAll('a');
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+        });
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursorinner.style.left = x + 'px';
+            cursorinner.style.top = y + 'px';
+        });
+
+        document.addEventListener('mousedown', function () {
+            cursor.classList.add('click');
+            cursorinner.classList.add('cursorinnerhover')
+        });
+
+        document.addEventListener('mouseup', function () {
+            cursor.classList.remove('click')
+            cursorinner.classList.remove('cursorinnerhover')
+        });
+
+        a.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                cursor.classList.add('hover');
+            });
+            item.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+            });
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".brightness").on("click", function () {
+                $("body").toggleClass("sun-toggle");
+                $(".info-header").toggleClass("info-header-toggle");
+                $(".download-btn button").toggleClass("download-btn-toggle");
+                $(".title").toggleClass("title-toggle");
+                $(".settings").toggleClass("settings-settings");
+                return false;
+            })
+        })
+    </script>
+</body>
+
+</html>

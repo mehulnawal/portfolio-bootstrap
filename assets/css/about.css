@@ -23,7 +23,8 @@ body {
   padding: 10px 15px;
   position: fixed;
   left: 0;
-  top: 22%;
+  top: 40%;
+  z-index: 9;
 
   a {
     animation: rotate 1s linear infinite;
@@ -79,6 +80,12 @@ body {
   z-index: -1;
 }
 
+@media (max-width: 991px) {
+  .title::before {
+    display: none;
+  }
+}
+
 .info-header {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -90,6 +97,7 @@ body {
 .download-btn {
   width: 250px;
   position: relative;
+  margin-top: 70px;
 
   button {
     color: white;

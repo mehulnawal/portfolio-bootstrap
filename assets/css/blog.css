@@ -28,7 +28,7 @@ body {
     padding: 10px 15px;
     position: fixed;
     left: 0;
-    top: 22%;
+    top: 40%;
 
     a {
         animation: rotate 1s linear infinite;
@@ -63,6 +63,13 @@ body {
         font-weight: bold;
     }
 }
+
+@media (max-width: 991px) {
+    .title::before {
+        display: none;
+    }
+}
+
 
 .title-toggle {
     background-color: black;

@@ -18,6 +18,71 @@ body {
     font-family: "Poppins", serif;
 }
 
+/* loader srt */
+.loader {
+    background-color: transparent;
+    /* height: 100vh; */
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+
+    .box {
+        background-color: black;
+        height: 100vh;
+        width: 50%;
+        animation: col-6-box 2s linear 1.5s;
+    }
+
+    .right {
+        position: relative;
+    }
+
+    .right::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 10%;
+        width: 2px;
+        background-color: var(--bs-warning);
+        animation: before-line 1.7s linear 1;
+    }
+}
+
+.loading {
+    overflow: hidden;
+}
+
+@keyframes before-line {
+    from {
+        height: 10%;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    to {
+        height: 100%;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes col-6-box {
+    from {
+        width: 50%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+/* loader end */
+
+
 /* setting srt  */
 .settings {
     font-size: 23px;
@@ -240,12 +305,6 @@ a:hover:after {
     transition: all 0.2s ease-in-out;
 }
 
-.icon-bg span,
-.active span {
-    display: none;
-    transition: all 0.2s ease-in-out;
-}
-
 .icon-bg:hover,
 .settings-icon:hover {
     /* border-radius: 10px; */
@@ -264,4 +323,52 @@ a:hover:after {
 .sun-toggle {
     background-color: white;
     color: black;
+}
+
+.navbar-toggler-btn {
+    background-color: white;
+}
+
+.navbar-main {
+    background-color: rgb(43, 42, 42);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+
+    .icon-bg {
+        display: block;
+        width: fit-content;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        position: relative;
+    }
+
+    .icon-bg::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 2px;
+        width: 100vw;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .icon-bg:hover {
+        color: var(--bs-warning);
+    }
+}
+
+.active {
+    color: var(--bs-warning);
+}
+
+.navbar-toggle {
+    transform: translateX(0%);
 }

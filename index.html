@@ -1,10 +1,14 @@
+Navbar - responsive <br />
+settings - gear - menu <br />
+-- animation <br />
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Home | Portfolio</title>
 
     <!-- favicon -->
     <link rel="icon" href="./assets/images/favicon.ico">
@@ -23,6 +27,15 @@
 
     <div class="cursor"></div>
     <div class="cursor2"></div>
+
+    <!-- loader srt  -->
+    <!-- <div class="loader">
+        <div class="row">
+            <div class="box left"></div>
+            <div class="box right ms-auto"></div>
+        </div>
+    </div> -->
+    <!-- loader end -->
 
     <!-- setting srt -->
     <div class="settings">
@@ -72,44 +85,86 @@
     <!-- main end -->
 
     <!-- nav srt -->
+    <div class="navbar flex-column d-md-flex d-none ">
 
-    <div class="navbar d-flex flex-column" id="navbarTogglerDemo01">
+        <button class="navbar-toggler-btn d-block d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggl erDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <a href="" class="settings-icon text-white">
             <i class="bi bi-brightness-high text-white fs-4 d-block mt-auto brightness" role="button"></i>
         </a>
 
-        <div class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 flex-column">
+        <div class="">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 flex-column">
 
-            <a class="nav-link active icon-bg d-flex align-items-center gap-2 text-white" href="./index.html">
-                <!-- <span class="fs-6">Home</span> -->
-                <i class="bi bi-house-door-fill text-white"></i>
-            </a>
+                <a class="nav-link active icon-bg d-flex align-items-center gap-2 text-white" href="./index.html">
+                    <!-- <span class="fs-6">Home</span> -->
+                    <i class="bi bi-house-door-fill text-white"></i>
+                </a>
 
-            <a class="nav-link icon-bg d-flex align-items-center gap-2 text-white" href="./about.html">
-                <!-- <span class="fs-6">About</span> -->
-                <i class="bi bi-person text-white"></i>
-            </a>
+                <a class="nav-link icon-bg d-flex align-items-center gap-2 text-white" href="./about.html">
+                    <!-- <span class="fs-6">About</span> -->
+                    <i class="bi bi-person text-white"></i>
+                </a>
 
-            <a class="nav-link icon-bg icon-bg d-flex align-items-center gap-2 text-white" href="./portfolio.html">
-                <!-- <span class="fs-6">Portfolio</span> -->
-                <i class="bi bi-briefcase text-white"></i>
-            </a>
+                <a class="nav-link icon-bg icon-bg d-flex align-items-center gap-2 text-white" href="./portfolio.html">
+                    <!-- <span class="fs-6">Portfolio</span> -->
+                    <i class="bi bi-briefcase text-white"></i>
+                </a>
 
-            <a class="nav-link icon-bg icon-bg d-flex align-items-center gap-2 text-white" href="./contact.html">
-                <!-- <span class="fs-6">Contact</span> -->
-                <i class="bi bi-envelope text-white"></i>
-            </a>
+                <a class="nav-link icon-bg icon-bg d-flex align-items-center gap-2 text-white" href="./contact.html">
+                    <!-- <span class="fs-6">Contact</span> -->
+                    <i class="bi bi-envelope text-white"></i>
+                </a>
 
-            <a class="nav-link icon-bg d-flex align-items-center gap-2 text-white" href="./blog.html">
-                <!-- <span class="fs-6">Blogs</span> -->
-                <i class="bi bi-chat-quote text-white"></i>
-            </a>
+                <a class="nav-link icon-bg d-flex align-items-center gap-2 text-white" href="./blog.html">
+                    <!-- <span class="fs-6">Blogs</span> -->
+                    <i class="bi bi-chat-quote text-white"></i>
+                </a>
 
+            </div>
         </div>
     </div>
-
     <!-- nav end -->
+
+    <!-- navbar toggle srt-->
+    <div class="navbar-main p-3">
+        <i class="bi bi-x-lg fs-3 navbar-close me-auto d-block" role="button"></i>
+
+        <div class="text-white">
+            <div class="navbar-nav mb-2 mb-lg-0 fs-4 flex-column justify-content-evenly h-100 pb-4">
+
+                <a class="nav-link icon-bg active d-flex align-items-center gap-4" href="./index.html">
+                    <i class="bi bi-house-door-fill"></i>
+                    <span class="fs-4">Home</span>
+                </a>
+
+                <a class="nav-link icon-bg d-flex align-items-center gap-4" href="./about.html">
+                    <i class="bi bi-person"></i>
+                    <span class="fs-4 text-white">About</span>
+                </a>
+
+                <a class="nav-link icon-bg icon-bg d-flex align-items-center gap-4" href="./portfolio.html">
+                    <i class="bi bi-briefcase"></i>
+                    <span class="fs-4">Portfolio</span>
+                </a>
+
+                <a class="nav-link icon-bg icon-bg d-flex align-items-center gap-4" href="./contact.html">
+                    <i class="bi bi-envelope"></i>
+                    <span class="fs-4">Contact</span>
+                </a>
+
+                <a class="nav-link icon-bg d-flex align-items-center gap-4" href="./blog.html">
+                    <i class="bi bi-chat-quote"></i>
+                    <span class="fs-4">Blogs</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- navbar toggle end-->
 
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -157,6 +212,7 @@
         })
     </script>
 
+    <!-- custom JQuery  -->
     <script>
         $(document).ready(function () {
             $(".brightness").on("click", function () {
@@ -167,7 +223,27 @@
                 $(".settings").toggleClass("settings-settings");
                 return false;
             })
+
+            // navbar toggle 
+            $(".navbar-toggler-btn").on("click", function () {
+                $(".navbar-main").addClass("navbar-toggle");
+            })
+
+            $(".navbar-close").on("click", function () {
+                $(".navbar-main").removeClass("navbar-toggle");
+            })
         })
+
+        // Loader
+        $(window).on("load", function () {
+
+            $(".loader").delay(3000).fadeOut(function () {
+
+                $("body").removeClass("loading");
+                $(".loading").remove();
+
+            });
+        });
     </script>
 </body>
 

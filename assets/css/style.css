@@ -16,12 +16,13 @@ body {
     background-color: var(--bs-primary);
     color: white;
     font-family: "Poppins", serif;
+    overflow: hidden;
 }
 
 /* loader srt */
 .loader {
     background-color: transparent;
-    /* height: 100vh; */
+    height: 100vh;
     width: 100vw;
     position: fixed;
     left: 0;
@@ -94,6 +95,7 @@ body {
     position: fixed;
     left: 0;
     top: 40%;
+    z-index: 9;
 
     a {
         animation: rotate 1s linear infinite;
@@ -372,3 +374,45 @@ a:hover:after {
 .navbar-toggle {
     transform: translateX(0%);
 }
+
+/* animation srt */
+.animation {
+    z-index: 999;
+
+    .box1,
+    .box2 {
+        height: 100px;
+        width: 100%;
+        transform: translateY(-100%);
+        animation: box1 2s linear infinite;
+        position: absolute;
+        left: 0;
+    }
+
+    .box1 {
+        top: 0;
+    }
+
+    .box2 {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        animation: box1 2s linear infinite;
+        transform: translateY(-100%);
+    }
+
+    @keyframes box1 {
+        from {
+            height: 100vh;
+            top: 0;
+        }
+
+        to {
+            height: 0vh;
+            /* transform: translateY(400%); */
+            top: 120%;
+        }
+    }
+}
+
+/* animation end */

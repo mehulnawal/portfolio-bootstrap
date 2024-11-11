@@ -29,6 +29,7 @@ body {
     position: fixed;
     left: 0;
     top: 40%;
+    z-index: 9;
 
     a {
         animation: rotate 1s linear infinite;

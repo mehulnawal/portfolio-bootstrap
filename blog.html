@@ -216,6 +216,15 @@
                 $(".blogs-card ").toggleClass("blogs-card-toggle");
                 return false;
             })
+
+            // navbar toggle 
+            $(".navbar-toggler-btn").on("click", function () {
+                $(".navbar-main").addClass("navbar-toggle");
+            })
+
+            $(".navbar-close").on("click", function () {
+                $(".navbar-main").removeClass("navbar-toggle");
+            })
         })
     </script>
 </body>

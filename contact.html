@@ -145,7 +145,8 @@
                     <i class="bi bi-briefcase text-white"></i>
                 </a>
 
-                <a class="nav-link active icon-bg icon-bg d-flex align-items-center gap-2 text-white" href="./contact.html">
+                <a class="nav-link active icon-bg icon-bg d-flex align-items-center gap-2 text-white"
+                    href="./contact.html">
                     <!-- <span class="fs-6">Contact</span> -->
                     <i class="bi bi-envelope text-white"></i>
                 </a>
@@ -250,6 +251,15 @@
                 $(".title").toggleClass("title-toggle");
                 $(".settings").toggleClass("settings-settings");
                 return false;
+            })
+
+            // navbar toggle 
+            $(".navbar-toggler-btn").on("click", function () {
+                $(".navbar-main").addClass("navbar-toggle");
+            })
+
+            $(".navbar-close").on("click", function () {
+                $(".navbar-main").removeClass("navbar-toggle");
             })
         })
     </script>

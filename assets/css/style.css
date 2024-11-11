@@ -336,7 +336,7 @@ a:hover:after {
     position: fixed;
     top: 0;
     left: 0;
-    transform: translateX(-100%);
+    transform: translateX(-120%);
     transition: all 0.4s ease-in-out;
 
     .icon-bg {
@@ -361,12 +361,12 @@ a:hover:after {
     }
 
     .icon-bg:hover {
-        color: var(--bs-warning);
+        background-color: var(--bs-warning);
     }
-}
 
-.active {
-    color: var(--bs-warning);
+    .active {
+        background-color: var(--bs-warning);
+    }
 }
 
 .navbar-toggle {

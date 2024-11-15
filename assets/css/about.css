@@ -5,12 +5,13 @@
   --bs-primary-rgb: 17, 17, 17;
   --bs-secondary: #ffb912;
   --bs-secondary-rgb: 255, 185, 18;
+  --bs-open-sans: "Open Sans", sans-serif;
 }
 
 body {
   background-color: var(--bs-primary);
   color: white;
-  font-family: "Poppins", serif;
+  font-family: var(--bs-open-sans);
 }
 
 /* setting srt  */
@@ -328,7 +329,7 @@ body {
 .icon-bg:hover,
 .settings-icon:hover {
   /* border-radius: 10px; */
-  background-color: #ffb912;
+  background-color: var(--bs-secondary);
 }
 
 
@@ -423,11 +424,11 @@ body {
   }
 
   .icon-bg:hover {
-    background-color: var(--bs-warning);
+    background-color: var(--bs-secondary);
   }
 
   .active {
-    background-color: var(--bs-warning);
+    background-color: var(--bs-secondary);
   }
 }
 

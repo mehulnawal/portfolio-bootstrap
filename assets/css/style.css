@@ -16,7 +16,6 @@ body {
     background-color: var(--bs-primary);
     color: white;
     font-family: "Poppins", serif;
-    overflow: hidden;
 }
 
 /* loader srt */
@@ -177,7 +176,9 @@ section {
     height: 100vh;
     flex-direction: column;
     text-decoration: none;
+    z-index: -1;
 }
+
 
 h1 {
     font-family: montserrat;

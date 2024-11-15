@@ -22,7 +22,7 @@ body {
   border-radius: 5px;
   padding: 10px 15px;
   position: fixed;
-  left: 0;
+  /* left: 0; */
   top: 40%;
   z-index: 9;
 
@@ -241,6 +241,84 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+.icon-bg:hover,
+.settings-icon:hover {
+  /* border-radius: 10px; */
+  background-color: #ffb912;
+}
+
+
+.active {
+  background-color: #ffb912;
+  border-radius: 50%;
+  padding: 5px 12px;
+  margin-top: 10px;
+  margin-top: 25px;
+}
+
+.sun-toggle {
+  background-color: white;
+  color: black;
+}
+
+.navbar-toggler-btn {
+  background-color: white;
+}
+
+.navbar-main {
+  background-color: rgb(43, 42, 42);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%);
+  transition: all 0.4s ease-in-out;
+
+  .icon-bg {
+    display: block;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    position: relative;
+  }
+
+  .icon-bg::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+
+  .icon-bg:hover {
+    background-color: var(--bs-warning);
+  }
+
+  .active {
+    background-color: var(--bs-warning);
+  }
+}
+
+.navbar-toggle {
+  transform: translateX(0%);
+}
+
+
+.icon-bg,
+.settings-icon {
+  background-color: rgb(43, 42, 42);
+  border-radius: 50%;
+  padding: 5px 12px;
+  margin-top: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
 .icon-bg span,
 .active span {
   display: none;
@@ -265,4 +343,94 @@ body {
 .sun-toggle {
   background-color: white;
   color: black;
+}
+
+/*  */
+.navbar {
+  font-size: 23px;
+  background-color: transparent;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 15px;
+  position: fixed;
+  right: 0;
+  top: 10%;
+}
+
+.icon-bg,
+.settings-icon {
+  background-color: rgb(43, 42, 42);
+  border-radius: 50%;
+  padding: 5px 12px;
+  margin-top: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-bg:hover,
+.settings-icon:hover {
+  /* border-radius: 10px; */
+  background-color: #ffb912;
+}
+
+
+.active {
+  background-color: #ffb912;
+  border-radius: 50%;
+  padding: 5px 12px;
+  margin-top: 10px;
+  margin-top: 25px;
+}
+
+.sun-toggle {
+  background-color: white;
+  color: black;
+}
+
+.navbar-toggler-btn {
+  background-color: white;
+}
+
+.navbar-main {
+  background-color: rgb(43, 42, 42);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%);
+  transition: all 0.4s ease-in-out;
+
+  .icon-bg {
+    display: block;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    position: relative;
+  }
+
+  .icon-bg::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+
+  .icon-bg:hover {
+    background-color: var(--bs-warning);
+  }
+
+  .active {
+    background-color: var(--bs-warning);
+  }
+}
+
+.navbar-toggle {
+  transform: translateX(0%);
 }

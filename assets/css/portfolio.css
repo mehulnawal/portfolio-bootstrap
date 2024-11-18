@@ -196,3 +196,27 @@ a:hover:after {
     visibility: visible;
     opacity: 1;
 }
+
+.modal-header {
+    background-color: #222222;
+
+    .btn-close {
+        background-color: white !important;
+    }
+
+    .modal-title {
+        color: #FFB400;
+        text-align: center;
+        width: 100%;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+}
+
+.modal-body {
+    background-color: #222222;
+}
+
+.modal-dialog {
+    background-color: #111111 !important;
+}

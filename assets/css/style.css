@@ -257,7 +257,10 @@ a:hover:after {
     position: relative;
 
     button {
-        color: white;
+
+        a {
+            color: white;
+        }
     }
 }
 

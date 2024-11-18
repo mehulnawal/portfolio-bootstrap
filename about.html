@@ -18,8 +18,12 @@
   <!-- main css link -->
   <link rel="stylesheet" href="./assets/css/style.css" />
 
+  <!-- animation css link -->
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
   <!-- about css link -->
   <link rel="stylesheet" href="./assets/css/about.css" />
+
 </head>
 
 <body class="">
@@ -27,10 +31,16 @@
   <div class="cursor"></div>
   <div class="cursor2"></div>
 
+  <!-- <div class="animation">
+    <div class="w-100 main">
+      <div class="box2 box w-100"></div>
+    </div>
+  </div> -->
+
   <!-- setting srt -->
-  <div class="settings">
+  <!-- <div class="settings">
     <i class="bi bi-gear"></i>
-  </div>
+  </div> -->
   <!-- setting end -->
 
   <!-- main content srt -->
@@ -277,7 +287,7 @@
           <i class="bi bi-house-door-fill text-white"></i>
         </a>
 
-        <a class="nav-link icon-bg active d-flex align-items-center gap-2 text-white" href="./about.html">
+        <a class="navigate nav-link icon-bg active d-flex align-items-center gap-2 text-white" href="./about.html">
           <!-- <span class="fs-6">About</span> -->
           <i class="bi bi-person text-white"></i>
         </a>
@@ -403,6 +413,18 @@
         $(".navbar-main").removeClass("navbar-toggle");
       })
     })
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".navigate").click(function () {
+        $(".animation .main .box2").addClass("box2-animation");
+
+        $(".animation .main .box2").on("animationend", function () {
+          $(this).removeClass("box2-animation");
+        });
+      });
+    });
   </script>
 </body>
 

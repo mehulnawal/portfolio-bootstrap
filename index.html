@@ -17,14 +17,10 @@
 
     <!-- main css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body class="loading">
-
-    <div class="animation">
-        <div class="mb-0 bg-info box2"></div>
-        <div class="mb-0 bg-secondary box1"></div>
-    </div>
 
     <div class="cursor"></div>
     <div class="cursor2"></div>
@@ -39,9 +35,9 @@
     <!-- loader end -->
 
     <!-- setting srt -->
-    <div class="settings">
+    <!-- <div class="settings">
         <i class="bi bi-gear"></i>
-    </div>
+    </div> -->
     <!-- setting end -->
 
     <!-- main srt -->
@@ -72,9 +68,11 @@
 
                         <div
                             class="mt-4 border border-2 border-warning bg-transparent rounded-pill py-1 px-3 download-btn d-flex justify-content-between">
-                            <button class="bg-transparent  border-0">
-                                More about me
-                            </button>
+                            <a href="./about.html" class="text-success">
+                                <button class="bg-transparent text-white border-0">
+                                    More about me
+                                </button>
+                            </a>
                             <i class="bi bi-arrow-right-short text-white fs-2 fw-semibold"></i>
                         </div>
                     </div>
@@ -96,7 +94,8 @@
         <div class="d-none d-md-block">
             <div class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 flex-column">
 
-                <a class="nav-link active icon-bg d-flex align-items-center gap-2 text-white" href="./index.html">
+                <a class="nav-link active icon-bg d-flex align-items-center gap-2 text-white"
+                    href="./index.html">
                     <!-- <span class="fs-6">Home</span> -->
                     <i class="bi bi-house-door-fill text-white"></i>
                 </a>
@@ -167,7 +166,8 @@
 
     <!-- jquery cdn  -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
 
     <!-- custom cursor -->
     <script>
@@ -233,7 +233,7 @@
         // Loader
         $(window).on("load", function () {
 
-            $(".loader").delay(3000).fadeOut(function () {
+            $(".loader").delay(2000).fadeOut(function () {
 
                 $("body").removeClass("loading");
                 $(".loading").remove();
@@ -241,6 +241,8 @@
             });
         });
     </script>
+
+  
 </body>
 
 </html>
